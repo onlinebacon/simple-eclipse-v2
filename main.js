@@ -136,8 +136,8 @@ const update = () => {
 	textLines.push(
 		`Time: ${strTime()}`,
 		`Angle Sun-Moon: ${strAngle(threePointsAngle(moon_x, moon_y, earth_x, earth_y, sun_x, sun_y))}`,
-		`Sun LHA: ${strAngle(threePointsAngle(coord00_x, coord00_y,earth_x, earth_y,sun_x, sun_y))}`,
-		`Moon LHA: ${strAngle(threePointsAngle(coord00_x, coord00_y,earth_x, earth_y,moon_x, moon_y))}`,
+		`Sun LHA: ${strAngle(threePointsAngle(earth_x, earth_y, coord00_x, coord00_y, sun_x, sun_y))}`,
+		`Moon LHA: ${strAngle(threePointsAngle(earth_x, earth_y, coord00_x, coord00_y, moon_x, moon_y))}`,
 	);
 };
 
